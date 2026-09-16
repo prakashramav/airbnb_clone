@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "name": "airbnb-listing-clone",
+  "framework": "nextjs-app-router",
+  "language": "javascript",
+  "styling": "tailwind-css",
+  "standards": [
+    "wcag-2.1-aa",
+    "pure-javascript-only",
+    "nextjs-14-rsc-boundaries"
+  ],
+  "directories": {
+    "components": "components/",
+    "app": "app/",
+    "data": "data/",
+    "docs": "docs/",
+    "hooks": "hooks/",
+    "utils": "utils/"
+  },
+  "buildCommand": "npm run build",
+  "lintCommand": "npm run lint"
+}

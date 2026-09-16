@@ -110,12 +110,16 @@ PlayPower Assignment/
 │   ├── ARCHITECTURE.md        # Production-scale distributed system design
 │   ├── ACCESSIBILITY.md       # WCAG 2.1 AA audit & keyboard checklist
 │   ├── VISUAL_QA.md           # Component comparison matrix & remediation
-│   └── AI_WORKFLOW.md         # Multi-agent development methodology
+│   ├── AI_WORKFLOW.md         # Multi-agent development methodology
+│   ├── architecture-diagram.png # High-res architecture visual diagram
+│   └── architecture-diagram.pdf # High-res architecture diagram PDF
 │
-├── .agent/
-│   ├── agents/                # Agent personas (analyzer, architect, engineer, etc.)
-│   └── skills/                # Skill cheatsheets (Next.js, fidelity, accessibility, QA)
-│
+├── .agent/                    # Multi-agent personas & skill sheets
+├── .claude/                   # Claude AI project settings & rules
+├── AGENTS.md                  # Agent architecture & execution protocol
+├── CLAUDE.md                  # Claude / AI development guidelines
+├── architecture-diagram.png   # Production architecture diagram (PNG)
+├── architecture-diagram.pdf   # Production architecture diagram (PDF)
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
@@ -126,7 +130,7 @@ PlayPower Assignment/
 ---
 
 ## Production Architecture
-A high-level architecture diagram and deep-dive for an enterprise-scale vacation rental marketplace handling 50M+ MAUs is documented in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+A high-level architecture diagram and deep-dive for an enterprise-scale vacation rental marketplace handling 50M+ MAUs is documented in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Visual assets are available as [`architecture-diagram.png`](architecture-diagram.png) and [`architecture-diagram.pdf`](architecture-diagram.pdf).
 
 It details:
 - Edge CDN caching & WAF protection (Cloudflare)
@@ -151,8 +155,8 @@ The application satisfies WCAG 2.1 AA guidelines. See [`docs/ACCESSIBILITY.md`](
 
 ---
 
-## AI-Assisted Development
-The project was constructed following an AI-Native multi-agent methodology. Complete prompt sequences and agent definitions are provided in [`docs/AI_WORKFLOW.md`](docs/AI_WORKFLOW.md) and the [`.agent/`](.agent/) directory.
+## AI-Assisted Development & Prompt Logs
+The project was constructed following an AI-Native multi-agent methodology. Detailed prompt history logs, agent prompts, negative constraints, and execution sequences are available in [`PROMPT_LOGS.md`](PROMPT_LOGS.md) and [`PROMPT_LOGS.txt`](PROMPT_LOGS.txt). System agent personas and skills are documented in [`docs/AI_WORKFLOW.md`](docs/AI_WORKFLOW.md), [`AGENTS.md`](AGENTS.md), and the [`.agent/`](.agent/) directory.
 
 ---
 
